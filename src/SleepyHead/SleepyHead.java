@@ -1,30 +1,25 @@
 package SleepyHead;
-//    Copyright (c) The League of Amazing Programmers 2013-2017
-//    Level 0
-
 import javax.swing.JOptionPane;
-
-
 public class SleepyHead {
-
-
     public static void main(String[] args) {
-        
-        boolean isWeekday, isVacation;
-        
+        boolean IsWeekday, IsVacation;
         /* You MUST use the above boolean variables in your code */
-        
-        /*
-         * Ask the user for these values using a confirm dialog like the one below
-         * JOptionPane.showConfirmDialog(null, "Is it a weekday?", "Sleepy Head", JOptionPane.YES_NO_OPTION);
-         */
-    
-
-
-        /*
-         * Print “sleep in�? if it is a vacation or a weekend. If it’s a weekday,
-         * print “get up lazybones!�? If it is a weekday, and we are on vacation,
-         * print “sleep in�?.
-         */
+        int CurrValue = JOptionPane.showConfirmDialog(null, "ˆß ˆ† ˇ˙´ „´´˚´˜∂¿", "Í¬´´π¥ ˙∑å∂", JOptionPane.YES_NO_OPTION);
+        if (CurrValue == 1) {
+        	IsWeekday = false;
+        } else {
+        	IsWeekday = true;
+        }
+        CurrValue = JOptionPane.showConfirmDialog(null, "Å®´ Áø¨ Ø˜ ◊åçå†ˆø˜¿", "Í¬´´π¥ ˙´å∂", JOptionPane.YES_NO_OPTION);
+        if (CurrValue == 1) {
+        	IsVacation = false;
+        } else {
+        	IsVacation = true;
+        }
+        if (!IsWeekday || IsVacation) {
+        	System.out.println("Í¬´´π ˆ");
+        } else {
+        	System.out.println("˝´† ¨π Áø¨ ÒåΩ¥ Åßß⁄⁄⁄");
+        }
     }
 }
