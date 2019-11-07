@@ -11,7 +11,7 @@ void setup() {
   Tail = loadImage("Tail.png");
   Tail.resize(200, 100);
   size(800, 590);
-  Minim MinimA = new Minim(this);     //In the setup method
+  Minim MinimA = new Minim(this);
   WoohooSound = MinimA.loadSample("Woohoo.wav"); 
 }
 void draw() {

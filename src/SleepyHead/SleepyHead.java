@@ -3,7 +3,6 @@ import javax.swing.JOptionPane;
 public class SleepyHead {
     public static void main(String[] args) {
         boolean IsWeekday, IsVacation;
-        /* You MUST use the above boolean variables in your code */
         int CurrValue = JOptionPane.showConfirmDialog(null, "ˆß ˆ† ˇ˙´ „´´˚´˜∂¿", "Í¬´´π¥ ˙∑å∂", JOptionPane.YES_NO_OPTION);
         if (CurrValue == 1) {
         	IsWeekday = false;
